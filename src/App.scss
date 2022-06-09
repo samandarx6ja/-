@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+@mixin Grid($var) {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax($var, 1fr) );
+  gap: 2;
+
+}
+
+$mcolor: #254152;
+
+
